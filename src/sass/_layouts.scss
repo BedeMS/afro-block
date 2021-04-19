@@ -1,0 +1,283 @@
+// Navigation
+// Footer
+
+////////Header
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about__header {
+  height: 8vh;
+  align-items: center;
+}
+
+.header__logo {
+  display: none;
+}
+
+////////////////////
+////////Navigation
+.nav {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 4rem 3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  z-index: 100;
+
+  & a {
+    max-width: 20%;
+    height: fit-content;
+    .nav__logo {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+
+    .nav__list-item {
+      position: relative;
+      font-size: 2.4rem;
+      font-weight: 300;
+      height: fit-content;
+      line-height: 1.6;
+      //   text-decoration: underline;
+      // transition: 0.5s all;
+
+      & a {
+        text-decoration: none;
+        color: $color-light-1;
+        transition: 0.8s all;
+        &:hover,
+        &:active {
+          transform: scale(1.1);
+          color: $color-light-2;
+
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 3px;
+          background: $color-light-1;
+          transition: 0.4s all;
+
+          // &:hover {
+          //     width: 100%;
+          // }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    margin-left: auto;
+    padding-right: 1rem;
+
+    a,
+    i {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: $color-light-1;
+
+      &:hover,
+      &:active {
+        color: $color-light-3;
+        transform: translate(2px, -2px);
+      }
+    }
+  }
+
+  &-toggle,
+  &-toggle-label {
+    display: none;
+  }
+}
+.nav.dark__nav {
+  height: 100%;
+  color: black;
+}
+
+.dark__nav .nav__list-item a {
+  color: black;
+
+  &:hover {
+    color: $color-light-1;
+  }
+}
+
+////////////////
+/////Search
+
+.search {
+  @include section;
+  background-color: $backgroundColor;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    @include headings;
+    margin-bottom: 5rem;
+  }
+
+  &__form {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    input[type="text"] {
+      width: 60%;
+      border-radius: 30px;
+      padding: 1.25rem 0 1.25rem 2rem;
+      border: 1px solid $color-dark-3;
+    }
+  }
+}
+
+////////////////
+/////Sponsors
+.sponsors {
+  // border-bottom: 3px solid $color-dark-3;
+  // padding: 5rem 0;
+  @include section;
+  background-color: $backgroundColor;
+
+  &__title {
+    @include headings;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  &__boxes {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .sponsor__box {
+      width: 33%;
+      height: 25rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      &-img {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+
+      &-link {
+        @include subheadings;
+        display: block;
+        // justify-self: flex-end;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          transform: scale(1.02);
+          color: $color-light-3;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////
+////////Footer
+.footer {
+  @include section;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__menu,
+  &__terms {
+    display: flex;
+    justify-content: space-around;
+    @include subheadings;
+    font-size: 2.3rem;
+  }
+  &__menu {
+    .footer__item {
+      color: #000;
+    }
+  }
+
+  &__terms {
+    // margin: 2rem 0;
+    color: black;
+
+    .footer__logo {
+      width: 15%;
+    }
+
+    .footer__icons {
+      display: flex;
+      justify-content: space-around;
+      width: 10%;
+      a,
+      i {
+        display: inline-block;
+        width: auto;
+      }
+
+      i {
+        color: $color-light-1;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+///////////////////
+/////Terms
+
+.terms {
+  display: flex;
+  width: 70%;
+  margin: 5rem auto;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    @include headings;
+    margin: 5rem auto;
+  }
+
+  &__desc {
+    @include paragraph;
+    line-height: 2;
+  }
+
+  &__list {
+    align-self: start;
+    list-style-type: circle;
+    @include paragraph;
+
+    &-item {
+      margin: 3rem 0;
+    }
+  }
+}

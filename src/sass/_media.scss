@@ -1,0 +1,578 @@
+@media only screen and (max-width: 1583px) {
+  .nav {
+    &__list {
+      width: 80%;
+      &-item a {
+        font-size: 2.4rem;
+      }
+    }
+    &__icon {
+      a,
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .footer {
+    &__terms {
+      .footer__icons {
+        width: 20%;
+      }
+    }
+  }
+
+  // about section
+  .about {
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    &__desc {
+      width: 30%;
+      text-align: center;
+    }
+    &__img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  // about section
+  .about {
+    flex-direction: column;
+    justify-content: center;
+
+    &__desc {
+      width: 100%;
+      order: 2;
+
+      &-desc {
+        margin: 0 auto;
+      }
+    }
+    &__img {
+      order: 1;
+      width: auto;
+      height: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+
+  // about our team
+  .team {
+    &__box {
+      width: 50%;
+    }
+  }
+
+  ////Contact Us
+  .contact {
+    height: 80vh;
+    &__form {
+      input,
+      textarea {
+        width: 80%;
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .jumbotron {
+    &__desc {
+      &-title {
+        width: 70%;
+      }
+    }
+  }
+  .nav {
+    width: 100%;
+    padding: 1rem 1rem;
+
+    &__logo {
+      min-width: 20%;
+      height: fit-content;
+    }
+
+    &__list {
+      width: 80%;
+      &-item a {
+        font-size: 1.7rem;
+      }
+    }
+    &__icon {
+      display: none;
+    }
+  }
+
+  .sponsors__boxes {
+    width: 100%;
+  }
+
+  .sponsors__title,
+  .newsletter__desc-title,
+  .search__title {
+    font-size: 3rem;
+  }
+
+  .footer {
+    height: auto;
+
+    &__menu {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .footer__item {
+        margin-bottom: 2rem;
+        text-align: center;
+        width: 25%;
+      }
+    }
+
+    &__terms {
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column-reverse;
+
+      .footer__logo {
+        width: 60%;
+      }
+
+      & * {
+        margin-bottom: 2rem;
+      }
+
+      .footer__icons {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .search {
+    &__form {
+      width: 80%;
+    }
+  }
+
+  .newsletter {
+    &__form {
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+      }
+    }
+  }
+
+  //////Sign Up Page
+  .signup {
+    &__desc {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__form {
+      width: 80%;
+      align-self: center;
+
+      input {
+        width: 100%;
+      }
+
+      button.btn {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // about Section
+  .about {
+    &__img {
+      width: 90%;
+    }
+  }
+
+  // about our team
+  .team {
+    &__box {
+      &-img {
+        width: 75%;
+      }
+      &-desc {
+        width: 100%;
+      }
+    }
+  }
+
+  // events
+  .events {
+    &__boxes {
+      .events__box {
+        width: 95%;
+
+        img {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  ////Contact Us
+  .contact {
+    height: auto;
+    flex-direction: column;
+
+    &__form,
+    &__description {
+      margin: 2rem auto;
+      align-items: center;
+      width: 80%;
+    }
+
+    &__form {
+
+      input,
+      textarea {
+        width: 80%;
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+// and (max-device-width: 699px)
+@media only screen and (max-width: 699px) {
+  a .header__logo {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    z-index: 1000;
+    max-width: 30%;
+    min-width: 20%;
+  }
+  .nav {
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+    width: 100%;
+    top: 8rem;
+    left: 0;
+    // margin-left: 3rem;
+    background-color: black;
+    height: auto;
+    display: none;
+
+    &__logo {
+      display: none;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+        margin-bottom: 1em;
+        // margin-left: 1em;
+
+        & a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-weight: 500;
+          height: fit-content;
+          line-height: 1.6;
+        }
+      }
+    }
+    &__icon {
+      display: none;
+    }
+  }
+
+  .dark__nav .nav__list-item a {
+    color: white;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 3rem;
+    // border: 1px solid red;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+
+    i.fas.fa-bars {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 5rem;
+      color: white;
+    }
+  }
+
+  .nav-toggle-label-dark {
+    i.fas.fa-bars {
+      color: black;
+    }
+  }
+
+  .nav-toggle:checked ~ .nav {
+    display: block;
+    height: auto;
+  }
+
+  .jumbotron {
+    &__desc {
+      &-title {
+        width: 70%;
+        font-size: 6rem;
+      }
+    }
+  }
+
+  .sponsors {
+    &__boxes {
+      justify-content: space-around;
+      .sponsor__box {
+        width: 40%;
+        img {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__menu {
+      .footer__item {
+        width: 50%;
+      }
+    }
+  }
+
+  .search {
+    &__title {
+      width: 80%;
+      text-align: center;
+    }
+    &__form {
+      width: 80%;
+    }
+  }
+
+  .newsletter {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__desc {
+      width: 80%;
+      text-align: center;
+      &-info {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__form {
+      width: 80%;
+      align-items: center;
+
+      input[type="text"],
+      input[type="email"] {
+        width: 80%;
+      }
+    }
+  }
+
+  //////Sign Up Page
+  .signup {
+    width: 100%;
+
+    &__desc {
+      width: 80%;
+    }
+    &__form {
+      input {
+        width: 80%;
+      }
+    }
+  }
+
+  // count
+  .count {
+    &__box {
+      i {
+        font-size: 3rem;
+      }
+
+      &-desc {
+        @include paragraph;
+
+        span {
+          @include subheadings;
+          color: black;
+        }
+      }
+    }
+  }
+
+  // events
+  .events {
+    &__boxes {
+      .events__box {
+        flex-direction: column;
+        align-items: center;
+
+        &-desc {
+          width: 95%;
+          text-align: center;
+
+          p {
+            text-align: center;
+            padding: 0;
+            margin: 2rem auto;
+          }
+        }
+        img {
+          width: 60%;
+          margin: 2rem auto;
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  a .header__logo {
+    max-width: 50%;
+  }
+
+  .nav-toggle-label {
+    i.fas.fa-bars {
+      font-size: 4rem;
+    }
+  }
+
+  .sponsors {
+    &__boxes {
+      .sponsor__box {
+        width: 100%;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__menu {
+      .footer__item {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__terms {
+      & * {
+        font-size: 1.4rem;
+      }
+
+      .footer__icons {
+        width: 100%;
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .search {
+    &__title {
+      text-align: center;
+      width: 80%;
+    }
+    &__form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & * {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  //////Sign Up Page
+  .signup {
+    &__heading {
+      @include subheadings;
+      color: #000000;
+    }
+    &__desc {
+      font-size: 1.2rem;
+    }
+  }
+
+  // team section
+  .team {
+    width: 100%;
+    &__box {
+      width: 100%;
+    }
+  }
+
+  .confirmation {
+    width: 90%;
+    text-align: center;
+
+    li {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  // count
+  .count {
+    &__box {
+      align-items: center;
+      i {
+        font-size: 1.4rem;
+      }
+
+      &-desc {
+        margin: 0;
+
+        span {
+          @include paragraph;
+        }
+      }
+    }
+  }
+
+  // events
+  .events {
+    &__boxes {
+      .events__box {
+        &-desc {
+          margin: 2rem auto;
+        }
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

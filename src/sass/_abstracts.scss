@@ -1,0 +1,49 @@
+// Variables
+// Fonts
+// Mixins
+// $color-light-1: #fdfffc; // Light background
+// $color-light-2: #e5e5e5; // Light lines
+// $color-light-3: #FFF7F2; // Light text (placeholder)
+// $color-light-4: rgba($color-light-2, 0.3);
+// $color-dark-1: #402E32; // Normal text 
+// $color-dark-2: #B6866F; // Lighter Text
+// $color-dark-3: #402E32; // Lightest text 
+
+// #402E32, #FFF6ED, #B6866F, #E76D2D
+
+$color-light-1: #FAA73F; // Light background
+$color-light-2: #FFF7ED; // Light lines
+$color-light-3: #4e7550; // Light text (placeholder)
+$color-light-4: rgba($color-light-2, 0.3);
+$color-dark-1: #AD8A68; // Normal text 
+$color-dark-2: #B6866F; // Lighter Text
+$color-dark-3: #402E32;
+$backgroundColor: rgba(#DFE0DF, 0.3);
+
+
+
+
+
+
+@mixin headings {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+@mixin subheadings {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: $color-light-1;
+    // color: black;
+}
+
+@mixin paragraph {
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+}
+
+@mixin section {
+    border-bottom: .5px solid $color-dark-1;
+    padding: 5rem 0;
+}

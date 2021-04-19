@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/dist/css/main.css" /> -->
+    <!-- <script defer src="src/js/controller.js"></script> -->
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script defer src="src/js/controller.js"></script>
+
+    <title>Afro-Block</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header about__header">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav class="nav dark__nav">
+        <a href="index.html"
+          ><img src="/src/img/ABbSVG.svg" alt="Afro-Block" class="nav__logo"
+        /></a>
+
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="about.html">Organization</a></li>
+          <li class="nav__list-item"><a href="afro-block.html">A-B 2021</a></li>
+          <li class="nav__list-item">
+            <a href="signup.html">Business Sign Up</a>
+          </li>
+          <li class="nav__list-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label nav-toggle-label-dark">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="index.html"
+        ><img src="/src/img/ABbsvg.svg" alt="Afro-Block" class="header__logo"
+      /></a>
+    </header>
+
+    <main class="main">
+      <!-- Sign Up Terms -->
+      <section class="terms">
+        <h1 class="terms__heading">Please Read before proceeding</h1>
+        <p class="terms__desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+          cupiditate nostrum amet laborum aspernatur eos itaque molestias. Sunt
+          quas qui repellendus enim libero itaque provident expedita et
+          consectetur perferendis unde, praesentium culpa adipisci excepturi
+          minus impedit esse odio soluta sed obcaecati ratione. Corporis
+          accusamus est iste, error ipsam ipsa consectetur. Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Vitae cupiditate nostrum amet
+          laborum aspernatur eos itaque molestias. Sunt quas qui repellendus
+          enim libero itaque provident expedita et consectetur perferendis unde,
+          praesentium culpa adipisci excepturi minus impedit esse odio soluta
+          sed obcaecati ratione. Corporis accusamus est iste, error ipsam ipsa
+          consectetur.
+        </p>
+        <ul class="terms__list">
+          <li class="terms__list-item">Business Must be savy.</li>
+          <li class="terms__list-item">Honest Filling of Information</li>
+          <li class="terms__list-item">Honest Filling of Information</li>
+          <li class="terms__list-item">Honest Filling of Information</li>
+          <li class="terms__list-item">Honest Filling of Information</li>
+        </ul>
+        <button class="terms__form-btn btn btn-circle">Agree</button>
+      </section>
+
+      <!-- SignUp -->
+      <section class="signup">
+        <h1 class="signup__heading">Business Sign Up</h1>
+        <p class="signup__desc">
+          Provide us with the necassary information to sign up your Afro
+          business. It will be added to our listings. <br />**The owners name
+          and email will not be made avialable publicly.
+        </p>
+        <form class="signup__form">
+          <div class="form-control">
+            <input
+              id="businessName"
+              name="business-name"
+              type="text"
+              value="Bede Marcos"
+              placeholder="Business Name"
+            />
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              id="businessEmail"
+              type="email"
+              value="bedemarmcos@gmail.com"
+              name="email"
+              placeholder="Business or Personal E-mail"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              id="businessPhone-number"
+              type="tel"
+              value="1231231234"
+              name="phone"
+              placeholder="Business Phone Number"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              id="ownerName"
+              name="owner-name"
+              value="Bede Marcos"
+              type="text"
+              placeholder="Owners Name"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              id="businessAddress"
+              value="3022 Bayview"
+              name="Address"
+              type="text"
+              placeholder="Full Business Address, Include City and Province"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label>Year Business Opened</label>
+            <input
+              id="businessOpen-date"
+              value="2020-03-20"
+              name="open-date"
+              type="date"
+              placeholder="Year Opened"
+            />
+            <small>Error Message</small>
+          </div>
+          <button class="signup__button btn btn-circle">Next</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__menu">
+        <a href="about.html" class="footer__item">Organization</a>
+        <a href="afro-block.html" class="footer__item">A-B 2021</a>
+        <a href="signup.html" class="footer__item">Business Sign Up</a>
+        <a href="contact.html" class="footer__item">Contact Us</a>
+      </div>
+      <div class="footer__terms">
+        <img src="/src/img/Abbsvg.svg" alt="Afro-Block" class="footer__logo" />
+        <p class="footer__rights">Copyright Afro-Block 2021</p>
+        <div class="footer__icons">
+          <a href="#" class="btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="btn"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="btn"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
