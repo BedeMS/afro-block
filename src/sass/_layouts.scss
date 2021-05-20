@@ -251,13 +251,11 @@
         display: inline-block;
         width: auto;
         color: $color-light-1;
-
         &:hover,
-        &:focus,
-        &:active {
+        &:focus {
           color: #000;
         }
-      }
+      }     
 
       i {
         font-size: 3rem;
