@@ -57,7 +57,8 @@
         color: $color-light-1;
         transition: 0.8s all;
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
           transform: scale(1.1);
           color: $color-light-2;
 
@@ -95,7 +96,8 @@
       color: $color-light-1;
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: $color-light-3;
         transform: translate(2px, -2px);
       }
@@ -222,6 +224,13 @@
   &__menu {
     .footer__item {
       color: #000;
+      transition: color 0.5s ease-in;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-light-1;
+      }
     }
   }
 
@@ -241,10 +250,16 @@
       i {
         display: inline-block;
         width: auto;
+        color: $color-light-1;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: #000;
+        }
       }
 
       i {
-        color: $color-light-1;
         font-size: 3rem;
       }
     }
